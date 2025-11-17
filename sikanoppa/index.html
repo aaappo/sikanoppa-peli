@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sikanoppa</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <h1>Sikanoppa</h1>
+        <hr>
+        <div class="main-box">
+            <div>
+                <div class="box">
+                    <h2>Noppamäärä</h2>
+                    <span class="number">1</span>
+                    <label class="switch">
+                        <input type="checkbox" id="diceSwitch">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="number">2</span>
+                    <br>
+                    <br>
+                    <button id="startGame">Aloita</button>
+                </div>
+                <div class="box">
+                    <h2>Pelaajat</h2>
+                    <input id="playerName" type="text">
+                    <button id="addPlayer">+</button>
+                    <hr>
+                    <table>
+                        <tbody id="playerTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div id="dicebox" style="display: none;" class="box">
+                    <span class="dice" dice="1">⚄</span>
+                    <span class="dice" dice="2">⚄</span>
+                    <br>
+                    <button id="throwDice">Heitä</button>
+                    <button id="takeScore">Kerää</button>
+                    <p id="diceScore">miu mau :3</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
